@@ -1,0 +1,30 @@
+$(document).ready(function(){
+    $('.slider').slick({
+        adaptiveHeight:true,
+        slidesToShow:4,
+        speed:600,
+        initialSlide:0,
+        infinite:true,
+        responsive:[
+            {
+                breakpoint:1331,
+                settings:{
+                    slidesToShow:3
+                }
+            },
+            {
+                breakpoint:1030,
+                settings:{
+                    slidesToShow:2
+                }
+            },
+            {
+                breakpoint:767,
+                settings:{
+                    slidesToShow:1
+                }
+            }
+            
+        ]
+    });
+});

@@ -1,0 +1,15 @@
+document.getElementById("menu__burger").onclick=function(){
+    document.getElementById("aside").classList.toggle("active");
+    document.getElementById("menu__burger-img").style.display='none';
+    document.getElementById("close").style.display='block';
+}
+document.getElementById("aside__backdrop").onclick=function(){
+    document.getElementById("aside").classList.toggle("active");
+    document.getElementById("menu__burger-img").style.display='block';
+    document.getElementById("close").style.display='none';
+}
+document.getElementById("close").onclick=function(){
+    document.getElementById("aside").classList.toggle("active");
+    document.getElementById("menu__burger-img").style.display='block';
+    document.getElementById("close").style.display='none';
+}
