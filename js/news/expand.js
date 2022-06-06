@@ -5,7 +5,7 @@ button.onclick = function (){
     var className = elm.className;
     if( className.indexOf(' expanded') == -1 ){
         className += ' expanded';
-        button.innerHTML= 'Скрыть <img src=../../img/news/arrow.svg>';
+        button.innerHTML= 'Скрыть <img src=../img/news/arrow.svg>';
     }
     else {
         className = className.replace(' expanded', '');
