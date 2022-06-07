@@ -169,7 +169,7 @@ header{
         border-left: 1px solid #231F20;
         border-right: none;
         width: 100%;
-        padding: 20px 10px 0 30px;
+        padding: 30px 10px 0 30px;
         position: relative;
         height: 180px;
     }
@@ -177,7 +177,7 @@ header{
         width: 100%;
         border-top: 1px solid #231F20;
         border-left: 1px solid #231F20;
-        padding: 20px 10px 0 30px;
+        padding: 30px 10px 0 30px;
         position: relative;
         height: 180px;
     }
@@ -221,5 +221,13 @@ header{
         font-size: 18px;
         line-height: 20px;
         margin-bottom: 32px; 
+    }
+    .project__item-wrapper-1{
+        padding: 30px 10px 50px 30px;
+        height: 100%;
+    }
+    .project__item-wrapper-2{
+        padding: 30px 10px 50px 30px;
+        height: 100%;
     }
 }
