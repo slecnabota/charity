@@ -11,8 +11,9 @@ header{
     background: url('../img/main/headerbgdekstop.png') no-repeat;
     background-size: cover;
     width: 100%;
-    height: 790px;
-    padding-bottom: 50px;
+    height: 100%;
+    padding-bottom: 150px;
+    z-index: 100;
 }
 .menu__list-item:not(:last-child) {
     margin-right: 35px;
@@ -141,10 +142,13 @@ header{
     header{
         background: url('../img/main/mobilebg.png') no-repeat;
         background-size: cover;
-        height: 850px;
+        height: 100%;
+        padding-bottom: 0;
+        background-position: left center;
     }
-}
-@media(max-width:375px){
+    header .container{
+        padding: 0 25px;
+    }
     .main__block .main__title{
         text-align: center;
         font-size: 20px;
@@ -162,6 +166,7 @@ header{
     }
     .main__desc{
         text-align: center;
+        margin: 0 auto;
     }
     .btn{
         display: block;
@@ -172,8 +177,8 @@ header{
 }
 /**mission**/
 .mission{
-    padding-top: 165px;
-    padding-bottom: 125px;
+    padding-top:265px;
+    padding-bottom: 0;
 }
 .mission__desc{
     font-weight: 400;
@@ -211,12 +216,12 @@ header{
     .logo__header{
         width: 265px;
     }
-}
-@media(max-width:375px){
     .mission{
-        padding-top: 150px;
+        padding-top:250px !important;
+        padding-bottom: 0;
     }
     .mission__desc{
+        width: 100%;
         margin-top: 27px;
         font-size: 16px;
         line-height: 1.7;
@@ -226,6 +231,7 @@ header{
 .about__company{
     background: url('../img/main/1.png') no-repeat;
     background-size: cover;
+    background-position: center center;
     margin-top: 40px;
     padding-top: 255px;
     padding-bottom: 230px;
@@ -339,15 +345,11 @@ header{
     }
 }
 @media(max-width:1199px){
-    .about__company{
-        background: url('../img/main/aboutlaptop.svg') no-repeat;
-        background-size: cover;
-        background-position: left center;
+    .about__desc{
+        padding-left: 0;
     }
-    .morebg{
-        background: url('../img/main/aboutlaptop.svg') no-repeat;
-        background-size: cover;
-        background-position: left center;
+    .about__hidden-info{
+        padding-left: 0;
     }
     .about__methods{
         grid-template-columns: repeat(3,220px);
@@ -359,15 +361,28 @@ header{
     .mission{
         padding-top: 130px;
     }
+    .about__company{
+        background-position: right 30% center;
+    }
+    .morebg{
+        background-position: right 30% center;
+    }
 }
 @media(max-width:1030px){
-    header{
-        background-position: center center;
+    .about__company{
+        background: url('../img/main/aboutlaptop.svg') no-repeat;
+        background-size: cover;
     }
     .about__methods{
         grid-template-columns: repeat(3,220px);
         -moz-column-gap: 100px;
         column-gap: 100px;
+    }
+    .about__desc{
+        padding-left: 200px;
+    }
+    .about__hidden-info{
+        padding-left: 200px;
     }
 }
 @media(max-width:961px){
@@ -426,6 +441,9 @@ header{
     .morebg{
         padding-top: 150px;
     }
+    .about__hidden-info br{
+        display: none;
+    }
 }
 @media(max-width:575px){
     .about__company .container{
@@ -436,40 +454,26 @@ header{
         -moz-column-gap: 20px;
         column-gap: 20px;
     }
-    .about__hidden-info br{
-        display: none;
-    }
     .about__hidden-info{
         padding-left: 0;
     }
 }
 @media(max-width:425px){
     .about__methods{
+        row-gap: 50px;
         -moz-column-gap: 20px;
         column-gap: 20px;
     }
     .about__methods-item{
         width: 160px !important;
     }
-    .about__heading{
-        font-size: 18px;
-    }
-    .animation-block{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .mission{
-        padding-top: 0;
-    }
-}
-@media(max-width:375px){
     .about__company{
-        background: url('../img/main/aboutmobilebg.png') no-repeat;
+        background: url('../img/main/Group\ 202.png') no-repeat;
         background-size: cover;
-        background-position: left 10% center;
+        background-position: left center;
         margin-top: 40px;
-        padding-top: 240px;
-        padding-bottom: 180px;
+        padding-top: 370px;
+        height: 910px;
     }
     .about__company .main__title {
         margin-top: 50px;
@@ -489,13 +493,12 @@ header{
         width: 85%;
     }
     .morebg{
-        background: url('../img/main/mobilehidden.png') no-repeat;
+        background: url('../img/main/Group\ 201.png') no-repeat;
         background-size: cover;
-        background-position: left center;
         margin-top: 40px;
-        padding-top: 240px;
+        padding-top: 330px;
         padding-bottom: 0;
-        height: 1815px;
+        height: 2015px;
     }
     .about__info{
         margin-top: 10px;
@@ -503,7 +506,10 @@ header{
     .about__hidden-info{
         line-height: 1.7;
     }
-    
+    .animation-block{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /**news**/
 .news__section{
@@ -593,8 +599,11 @@ header{
     }
 }
 @media(max-width:475px){
+    .news__section .container{
+        padding: 0 35px;
+    }
     .news__cards-item{
-        width: 75%;
+        width: 100%;
     }
 }
 @media(max-width:375px){
@@ -605,7 +614,7 @@ header{
         width: 113px;
         height: 100%;
         top:-165px;
-        z-index: 1;
+        z-index: -1;
     }
     .news__section{
         padding-top: 20px;
