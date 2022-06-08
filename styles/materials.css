@@ -1,0 +1,132 @@
+@import url('all.css');
+@import url('footer.css');
+header{
+    background: url('../img/materials/bg.svg') no-repeat;
+    background-size: cover;
+    background-position: left 30% center;  
+    height: 100%;
+    padding-bottom: 70px; 
+}
+main{
+    margin-top: 40px;
+}
+.news__title{
+    font-family: 'Philosopher';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    color: #FFFFFF;
+    margin-top: 280px;  
+    position: relative;
+    animation: showLeft 1s;
+    z-index: 1; 
+}
+.news__link img{
+    margin: 0 10px;
+}
+.news__link-item1{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #949599;    
+}
+.news__link-item2{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #16203C;  
+}
+.news__link{
+    margin-bottom: 110px;
+}
+.materials__section{
+    padding-bottom: 220px;
+}
+.materials__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.materials-item{
+    padding: 40px 0 27px 26px;
+    width: 32%;
+    background: #EDEDED;
+    border-radius: 5px;
+}
+.materials__title{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: #231F20;    
+}
+.materials__line{
+    width: 100%;
+    margin: 13px 0 20px 0;
+    border-top: 1px solid #231F20;
+}
+.source__file{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 27px;
+}
+.source__file a{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #231F20;    
+}
+.source__file img{
+    padding-left: 10px;
+}
+@media(max-width:1199px){
+    .materials__wrapper{
+        flex-wrap: wrap;
+    }
+    .materials-item{
+        width: 42%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:961px){
+    .materials-item{
+        width: 60%;
+    }
+    .materials__section{
+        padding-bottom: 140px;
+    }
+}
+@media(max-width:767px){
+    .materials-item{
+        width: 80%;
+    }
+    .news__title{
+        font-size: 48px;
+    }
+}
+@media(max-width:575px){
+    .materials-item{
+        width: 100%;
+    }
+}
+@media(max-width:425px){    
+    header{
+        background: url('../img/materials/mobilebg.png') no-repeat;
+        background-size: cover;
+        background-position: left center;
+        height: 100%;
+        padding-bottom: 70px; 
+    }
+    footer{
+        background: url('../img/all/mobilefooter.png') no-repeat;
+        background-size: cover;
+        padding: 0 30px;
+    }
+    .news__title{
+        font-size: 32px;
+        line-height: 36px;       
+    }
+    .materials__title{
+        font-size: 22px;
+    }
+}

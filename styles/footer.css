@@ -1,0 +1,9 @@
+footer{
+    background: url('../img/all/newfooterbg.png') no-repeat;
+    background-size: cover;
+    height: 355px;
+    padding-top: 211px;
+}
+.license{   
+    margin-top: 50px;
+}
